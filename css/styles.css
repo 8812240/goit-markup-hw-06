@@ -263,6 +263,8 @@ a {
     color: var(--dark-gray);
 }
 
+/*okno modal*/
+
 .modal {
     position: fixed;
     top: 0;
@@ -308,10 +310,114 @@ a {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon {
     width: 60%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1666em;
+    letter-spacing: 0.01em;
+    color: var(--gray);
+    margin: 12px 0 0 40px;
+    gap: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form input {
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+}
+
+textarea {
+    width: 448px;
+    height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px 12px 16px;
+}
+
+.modal-form input:hover,
+textarea:hover {
+    border: 1px solid var(--blue);
+}
+
+.modal-privacy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modal-privacy input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+}
+
+.modal-submit-button {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.modal-submit-button button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    color: var(--white);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875em;
+    letter-spacing: 0.06em;
+    text-align: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit-button button:hover {
+    color: var(--dark-gray);
+}
+
+.icon-mod-name,
+.icon-mod-phone,
+.icon-mod-mail {
+    position: absolute;
+    transform: translate(10px, -30px);
+    width: 20px;
+    height: 20px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-name:hover .icon-mod-name {
+    fill: var(--blue);
+}
+
+.modal-phone:hover .icon-mod-phone {
+    fill: var(--blue);
+}
+
+.modal-email:hover .icon-mod-mail {
+    fill: var(--blue);
 }
 
 .is-hidden {
@@ -320,6 +426,18 @@ a {
     visibility: hidden;
 }
 
+.modal-content:hover,
+.modal-close-button:hover {
+    border: 1px solid var(--blue);
+}
+
+.modal-close-button:hover .close-icon {
+    fill: var(--blue);
+}
+
+.modal-close-button, .close-icon {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* Pierwszy artykuł sekcji */
 
@@ -677,6 +795,77 @@ footer {
 }
 
 .circle-footer:hover .sm-icon-footer {
+    fill: var(--white);
+}
+
+.singup-form {
+    color: var(--white);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    display: flex;
+}
+
+.singup-news {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+
+.singup-input {
+    box-sizing: border-box;
+    color: var(--white);
+    width: 358px;
+    height: 50px;
+    background: var(--dark-gray);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 15px;
+    margin-right: 8px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.singup-input:hover {
+    border: 1px solid var(--blue);
+}
+
+.singup-form button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    color: var(--white);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875em;
+    letter-spacing: 0.06em;
+    text-align: left;
+    padding-left: 42px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.singup-form button:hover {
+    color: var(--dark-gray);
+}
+
+.icon-send {
+    position: absolute;
+    transform: translate(-50px, 15px);
+    width: 24px;
+    height: 24px;
     fill: var(--white);
 }
 
