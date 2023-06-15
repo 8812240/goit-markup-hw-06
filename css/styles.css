@@ -17,6 +17,7 @@
     --border-header: #ececec;
     --border-portfolio-li: #eeeeee;
     --social-media: #AFB1B8;
+    --privacy: #757575;
 }
 
 body {
@@ -331,7 +332,6 @@ a {
     line-height: 1.1666em;
     letter-spacing: 0.01em;
     color: var(--gray);
-    gap: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -364,6 +364,7 @@ a {
     padding-left: 42px;
     margin-top: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
 }
 
 .modal-form input:focus-within {
@@ -393,7 +394,7 @@ textarea:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .modal-privacy input[type="checkbox"] {
@@ -402,12 +403,15 @@ textarea:hover {
     margin-right: 7px;
 }
 
-.modal-submit-button {
-    text-align: center;
-    margin: 30px auto;
+.privacy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--privacy);
 }
 
-.modal-submit-button button {
+.modal-submit-button {
     width: 200px;
     height: 50px;
     background-color: var(--blue);
@@ -423,9 +427,11 @@ textarea:hover {
     letter-spacing: 0.06em;
     text-align: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    margin: 0 auto;
 }
 
-.modal-submit-button button:hover {
+.modal-submit-button:hover {
     color: var(--dark-gray);
 }
 
@@ -844,7 +850,10 @@ footer {
     line-height: 1.1428em;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin: 0;
+    margin-left: auto;
+}
+
+.singup_form {
     display: flex;
 }
 
@@ -867,7 +876,7 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding-left: 15px;
-    margin-right: 8px;
+    margin-right: 12px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -876,6 +885,7 @@ footer {
 }
 
 .singup-form button {
+    position: relative;
     width: 200px;
     height: 50px;
     background-color: var(--blue);
